@@ -62,6 +62,7 @@
             this.внутреннююНормуДоходностиIRRToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.label13 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -247,6 +248,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -293,7 +295,7 @@
             // 
             this.panel1.Location = new System.Drawing.Point(303, 41);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(628, 342);
+            this.panel1.Size = new System.Drawing.Size(628, 347);
             this.panel1.TabIndex = 15;
             // 
             // теорияToolStripMenuItem2
@@ -356,18 +358,18 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label13.Location = new System.Drawing.Point(149, 130);
+            this.label13.Location = new System.Drawing.Point(235, 154);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(706, 25);
+            this.label13.Size = new System.Drawing.Size(509, 25);
             this.label13.TabIndex = 16;
-            this.label13.Text = "Расчет показателей экономической эффективности проекта ";
+            this.label13.Text = "Программная система расчета показателей";
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.ForestGreen;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(380, 238);
+            this.button2.Location = new System.Drawing.Point(390, 279);
             this.button2.Margin = new System.Windows.Forms.Padding(0);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(177, 52);
@@ -376,12 +378,23 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Lucida Sans Unicode", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label14.Location = new System.Drawing.Point(248, 190);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(475, 25);
+            this.label14.TabIndex = 18;
+            this.label14.Text = "экономической эффективности проекта ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ClientSize = new System.Drawing.Size(943, 472);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label13);
@@ -447,6 +460,7 @@
         private System.Windows.Forms.ToolStripMenuItem внутреннююНормуДоходностиIRRToolStripMenuItem1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
     }
 }
 

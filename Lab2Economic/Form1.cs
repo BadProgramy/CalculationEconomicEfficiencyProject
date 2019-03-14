@@ -280,6 +280,7 @@ namespace Lab2Economic
         private void setVisibleMainMenu(bool mainSolution, bool mainForm)
         {
             label13.Visible = mainForm;
+            label14.Visible = mainForm;
             button2.Visible = mainForm;
 
             label1.Visible = mainSolution;
