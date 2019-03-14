@@ -303,8 +303,7 @@ namespace Lab2Economic
             panel1.Visible = mainSolution;
             dataGridView1.Visible = mainSolution;
             button1.Visible = mainSolution;
-
-            
+            теорияToolStripMenuItem.Enabled = mainSolution;     
         }
 
         private void button2_Click(object sender, EventArgs e)
