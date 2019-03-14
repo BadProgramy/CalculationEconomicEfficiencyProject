@@ -77,7 +77,7 @@
             this.теорияToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(943, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(966, 29);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -142,7 +142,7 @@
             this.button1.BackColor = System.Drawing.Color.ForestGreen;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(561, 400);
+            this.button1.Location = new System.Drawing.Point(561, 411);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 52);
@@ -293,9 +293,9 @@
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(303, 41);
+            this.panel1.Location = new System.Drawing.Point(313, 41);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(628, 347);
+            this.panel1.Size = new System.Drawing.Size(642, 358);
             this.panel1.TabIndex = 15;
             // 
             // теорияToolStripMenuItem2
@@ -393,7 +393,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.ClientSize = new System.Drawing.Size(943, 472);
+            this.ClientSize = new System.Drawing.Size(966, 472);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.panel1);

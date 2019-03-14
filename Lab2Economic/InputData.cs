@@ -53,5 +53,20 @@ namespace Lab2Economic
                 dataGridView1.Rows.Add(entry.name, entry.value);
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Width = 383;
+            this.Height = 479;
+            dataGridView1.Rows.Clear();
+            numericUpDown1.Value = 3;
+            data.horizonOfCalculationOfTheProject = 3;
+            dataGridView1.Visible = true;
+            button1.Visible = true;
+            foreach (Map entry in data.getExample())
+            {
+                dataGridView1.Rows.Add(entry.name, entry.value);
+            }
+        }
     }
 }

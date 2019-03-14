@@ -169,7 +169,12 @@ namespace Lab2Economic
             myChart.Dock = DockStyle.Fill;
             //добавляем в Chart область для рисования графиков, их может быть
             //много, поэтому даем ей имя.
-            myChart.ChartAreas.Add(new ChartArea("Math functions"));
+            ChartArea mathFunc = new ChartArea("Math functions");
+            mathFunc.AxisY.Title = "Прибыль, руб";
+            mathFunc.AxisY.TitleForeColor = System.Drawing.Color.Blue;
+            mathFunc.AxisX.Title = "Период, год";
+            mathFunc.AxisX.TitleForeColor = System.Drawing.Color.Blue;
+            myChart.ChartAreas.Add(mathFunc);
 
             //Создаем и настраиваем набор точек для рисования графика, в том
             //не забыв указать имя области на которой хотим отобразить этот
@@ -189,13 +194,13 @@ namespace Lab2Economic
                 mySeriesOfPoint.Points.AddXY(x, NPVmass[x]);
                 mySeriesOfPoint1.Points.AddXY(x, NPVmass[x]);
                 mySeriesOfPoint1.Points[x].Color = System.Drawing.Color.Red;
-                mySeriesOfPoint1.Points[x].Label = "(" + x + " год, " + Math.Round(NPVmass[x], numberRound) + ")";
+                mySeriesOfPoint1.Points[x].Label = "(" + x + ", " + Math.Round(NPVmass[x], numberRound) + ")";
             }
             mySeriesOfPoint.Points.AddXY(Math.Round(PBP, numberRound), 0);
             mySeriesOfPoint1.Points.AddXY(Math.Round(PBP, numberRound), 0);
             
             mySeriesOfPoint1.Points[NPVmass.Length].Color = System.Drawing.Color.Red;
-            mySeriesOfPoint1.Points[NPVmass.Length].Label = "PBP";//"(" + Math.Round(PBP, numberRound) + " год, " + mySeriesOfPoint1.Points[NPVmass.Length].YValues[0] + ")";
+            mySeriesOfPoint1.Points[NPVmass.Length].Label = "PBP("+ 0 + ", " + Math.Round(PBP, numberRound) + ")";//"(" + Math.Round(PBP, numberRound) + " год, " + mySeriesOfPoint1.Points[NPVmass.Length].YValues[0] + ")";
             //Добавляем созданный набор точек в Chart
             myChart.Series.Add(mySeriesOfPoint);
             myChart.Series.Add(mySeriesOfPoint1);
